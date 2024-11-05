@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlinkIt Clone - Product Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">BlinkIt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories.html">Categories</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="product-details.html">Product Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="offers.html">Offers</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="data:image/jpeg;base64,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" class="img-fluid" alt="Product Image">
+            </div>
+            <div class="col-md-6">
+                <h2>Fresh Apples</h2>
+                <p>Price: $4.99 / kg</p>
+                <p>Description: Fresh and juicy apples, delivered right to your doorstep.</p>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="form-control" id="quantity" value="1">
+                </div>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-light text-center">
+        <p>&copy; 2024 BlinkIt Clone. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

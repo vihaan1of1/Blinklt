@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlinkIt Clone - Offers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">BlinkIt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+                <li class="nav-item active"><a class="nav-link" href="offers.html">Offers</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Offers Section -->
+    <div class="container mt-5">
+        <h2>Special Offers</h2>
+        <div class="row">
+            <!-- Offer 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="data:image/png;base64,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" class="card-img-top" alt="Offer 1">
+                    <div class="card-body">
+                        <h5 class="card-title">10% Off on Fruits</h5>
+                        <p class="card-text">Get 10% off on all fresh fruits.</p>
+                        <a href="product-details.html" class="btn btn-primary">Shop Products</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Offer 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://t4.ftcdn.net/jpg/05/46/82/47/360_F_546824763_qlcg1mXaPIBQj4qmXkNXFbDeQdjnpfgQ.jpg" class="card-img-top" alt="Offer 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Buy 1 Get 1 Free on Vegetables</h5>
+                        <p class="card-text">Special BOGO offer on select vegetables.</p>
+                        <a href="vegetableoffer.html" class="btn btn-primary">Shop Products</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Offer 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://png.pngtree.com/png-vector/20221107/ourmid/pngtree-up-to-20-off-price-tag-design-png-image_6429660.png" class="card-img-top" alt="Offer 3">
+                    <div class="card-body">
+                        <h5 class="card-title">20% Off on Dairy Products</h5>
+                        <p class="card-text">Save 20% on milk, cheese, and more.</p>
+                        <a href="dairyoffer.html" class="btn btn-primary">Shop Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center mt-5">
+        <p>&copy; 2024 BlinkIt Clone. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

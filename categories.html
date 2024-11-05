@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlinkIt Clone - Categories</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Global Styling */
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.7rem;
+            color: white !important;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-size: 1.1rem;
+        }
+
+        .nav-link:hover {
+            color: #ff9800 !important;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 700;
+        }
+
+        /* Card Styling */
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #333;
+            padding: 30px 0;
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+        }
+
+        .footer a {
+            color: #ff9800;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            color: #ffc107;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .card-title {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">BlinkIt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="categories.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="offers.html">Offers</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Categories Section -->
+    <div class="container mt-5">
+        <h2>Explore Our Categories</h2>
+        <div class="row">
+            <!-- Fruits Category -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvc6ioxKEud-0EXYKdNL4Zc3J06rAcwxWuCg&s" class="card-img-top" alt="Fruits">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fruits</h5>
+                        <a href="product-details1.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vegetables Category -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7sATwiTU1Mn6QOsgEQGy0jJpqwqJlB2jUA&s" class="card-img-top" alt="Vegetables">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Vegetables</h5>
+                        <a href="product-details2.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Dairy Category -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Dairy">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dairy</h5>
+                        <a href="product-details3.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 BlinkIt. All rights reserved.</p>
+        <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
